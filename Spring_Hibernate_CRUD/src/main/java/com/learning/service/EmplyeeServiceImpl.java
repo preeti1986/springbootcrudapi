@@ -43,4 +43,10 @@ public class EmplyeeServiceImpl implements EmployeeService {
 		employeeDao.delete(id);
 	}
 
+	@Override
+	public void update(Employee employee) {
+		// TODO Auto-generated method stub
+		 employeeDao.update(employee);
+	}
+
 }

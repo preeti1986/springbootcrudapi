@@ -42,4 +42,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		
 	}
 
+	@Override
+	public void update(Employee employee) {
+		Session currentSession = entityManager.unwrap(Session.class);
+		currentSession.saveOrUpdate(employee);
+	}
+	
+
 }
